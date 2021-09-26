@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Car_1 {
+	animation-name: First_Car;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-delay: 2s;
+
+}
+
+.Car_2 {
+	animation-name: Second_Car;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-delay: 1s;
+}
+
+@keyframes First_Car {
+	0% {
+		margin-left: 0;
+	}
+
+	25% {
+		margin-left: 1155px;	
+	}
+
+	50% {
+		transform: rotateY(180deg);	
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+@keyframes Second_Car {
+	from {
+		margin-left: 1155px;
+	}
+
+	to {
+		margin-left: 0;
+	}
+}
+
+.Road img {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	top: -1190px;
+}
